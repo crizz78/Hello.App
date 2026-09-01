@@ -1,1 +1,11 @@
+# Flujo de Trabajo del Proyecto
 
+```mermaid
+graph TD
+    A[Inicio] --> B{¿Usuario registrado?}
+    B -->|Sí| C[Iniciar Sesión]
+    B -->|No| D[Registrarse]
+    C --> E[Panel Principal]
+    D --> E
+    E --> F[Realizar Acción]
+    F --> G[Finalizar]
