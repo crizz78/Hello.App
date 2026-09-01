@@ -1,32 +1,25 @@
-Hola
-Nivel: 1 - Principiante
+Descripción del Proyecto
 
-Es evidente que las aplicaciones deben proporcionar a los usuarios la funcionalidad necesaria para realizar alguna tarea u objetivo. La eficacia de la funcionalidad de una aplicación es el primer factor que determina cómo los usuarios perciben las aplicaciones que utilizan. Sin embargo, no es lo único que influye en la satisfacción del usuario.
+La aplicación Hello es una interfaz web interactiva que simula un sistema de inicio de sesión (login) y ofrece una experiencia personalizada mediante geolocalización. Al ingresar a la aplicación, el sistema detecta de forma automática la dirección IP del usuario (utilizando la API IP-API) y consulta el saludo correspondiente a su idioma nativo a través de la API de Fourtonfish.
 
-Las características de interfaz de usuario y experiencia de usuario (UI/UX) que los desarrolladores incorporan a las aplicaciones influyen significativamente en la percepción que los usuarios tienen de ellas. Si bien puede ser una simplificación excesiva, la UI/UX se centra principalmente (aunque no exclusivamente) en la "forma" de la aplicación. La personalización es un aspecto de la UX que adapta las características y acciones a cada usuario. Personalizar la funcionalidad de la aplicación de esta manera facilita su uso y la hace más agradable.
+Al autenticarse correctamente, el sistema muestra un mensaje de bienvenida personalizado en el idioma local del usuario, procesando de forma segura los caracteres mediante decodificación de entidades HTML. Además, incluye opciones avanzadas como un modo de prueba manual mediante códigos de idioma y la visualización detallada de datos geográficos (ciudad, región, país, coordenadas y zona horaria).
 
-El objetivo de la aplicación Hello es aprovechar la geolocalización para obtener el país del usuario y así generar un saludo personalizado en su idioma nativo.
+¿Por qué escogí este proyecto?
 
-Restricciones
-Los desarrolladores deben utilizar el servicio IP-API para obtener la dirección IP de los usuarios.
-Los desarrolladores deben utilizar el servicio Fourtonfish para obtener el saludo en el idioma nativo del usuario, pasando la dirección IP del usuario.
-Los desarrolladores deben utilizar la decodificación de entidades HTML para decodificar el mensaje de saludo.
-Historias de usuario
-El usuario puede ver un panel de inicio de sesión simulado que contiene un campo para introducir el nombre de usuario, un campo para introducir la contraseña y los botones "Iniciar sesión" y "Cerrar sesión".
-El usuario puede introducir un nombre de usuario ficticio en el campo Nombre de usuario.
-El usuario puede introducir una contraseña ficticia en el campo Contraseña. La entrada debe estar enmascarada para que el usuario vea asteriscos ( **) por cada carácter introducido, en lugar de la contraseña en texto plano.
-El usuario puede hacer clic en el botón "Iniciar sesión" para realizar un inicio de sesión de prueba.
-El usuario podrá ver un mensaje si uno o ambos campos de entrada están vacíos, y el color del borde del/de los campo/s con error deberá cambiarse a rojo.
-El usuario puede ver un mensaje de confirmación de inicio de sesión con el siguiente formato: <hello-in-native-language> <user-name> you have successfully logged in!
-El usuario puede hacer clic en el botón "Cerrar sesión" para borrar los campos de texto introducidos y cualquier mensaje anterior.
-El usuario puede ver un nuevo mensaje cuando cierra sesión correctamente en el siguiente formato: Have a great day <user-name>!
-Características adicionales
-El usuario puede ver un campo de texto adicional para introducir un código de idioma que se utilizará para anular la dirección IP obtenida mediante geolocalización. Consejo: esta es una función muy útil para probar tu aplicación.
-Tras iniciar sesión, el usuario puede ver información de geolocalización adicional que incluye, como mínimo, la dirección IP local, la ciudad, la región, el nombre del país, el código postal, la longitud, la latitud y la zona horaria.
-Enlaces y recursos útiles
-La forma sigue a la función (Wikipedia)
-Personalización (Wikipedia)
-Fourtonfish
-API IP
-Proyectos de ejemplo
-Fourtonfish Hola Mundo
+Aprendizaje práctico de integración de APIs: Permite aprender a conectar una aplicación con servicios externos reales (IP-API y Fourtonfish) para consumir y procesar datos en tiempo real mediante peticiones asíncronas.
+
+Manejo de estados y validación de formularios: Es ideal para dominar conceptos fundamentales del desarrollo web, como la validación de campos obligatorios, la manipulación de eventos (Login/Logout) y el dinamismo en la interfaz mediante manipulación del DOM.
+
+Introducción al diseño UX/UI: Ayuda a entender cómo pequeños detalles visuales —como enmascarar contraseñas o cambiar el color de los bordes a rojo ante un error— mejoran la usabilidad y la percepción de calidad por parte del usuario.
+
+Justificación de la NecesidadAspectoImportancia / ImpactoPersonalización e IdentidadAdaptar la interfaz al idioma nativo del usuario desde el primer contacto reduce la fricción de uso y crea una experiencia más humana y cercana.Feedback Visual EficienteLa validación dinámica en formularios evita la frustración del usuario al indicar claramente qué campos requieren corrección mediante alertas e indicadores visuales.Pruebas y EscalabilidadLa inclusión de herramientas de anulación de código de idioma (override) responde a la necesidad técnica de probar el sistema en diferentes entornos geográficos sin requerir conexiones VPN externas.
+
+Desglose de la Metodología
+Desarrollo Basado en Historias de Usuario (Metodologías Ágiles / Scrum):
+El proyecto está estructurado dividiendo los requerimientos en "Historias de Usuario" (User Stories). Cada historia describe una interacción específica desde la perspectiva del usuario final (ej. "El usuario puede ver...", "El usuario puede hacer clic..."), lo que facilita el desarrollo incremental y la verificación de funcionalidades.
+
+Desarrollo Orientado a Funcionalidades (FDD - Feature Driven Development):
+Se enfoca en entregar funcionalidades pequeñas y bien definidas en ciclos cortos: primero la autenticación básica, luego las validaciones visuales, posteriormente la integración de APIs externas (geolocalización y traducción) y finalmente las características adicionales.
+
+Aprendizaje Basado en Proyectos (ABP):
+Al estar clasificado explícitamente como "Nivel: 1 - Principiante", sigue una metodología pedagógica práctica donde se aplican conceptos teóricos (promesas/async-await, peticiones HTTP, manipulación del DOM y diseño UI/UX) mediante la construcción de un producto funcional completo.
