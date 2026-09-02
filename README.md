@@ -31,7 +31,7 @@
 
 ## 4. Modelado
 
-El diagrama del sistema fue elaborado en la herramienta CASE **draw.io** y se encuentra disponible en la carpeta `/docs/diagrama.png`.
+El diagrama del sistema fue elaborado en la herramienta CASE **draw.io** y se encuentra disponible en la carpeta `/Diagrama sin título.drawio.png`.
 
 !![Diagrama de Casos de Uso](https://github.com/crizz78/Hello.App/blob/main/Diagrama%20sin%20t%C3%ADtulo.drawio.png)
 
