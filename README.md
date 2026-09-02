@@ -33,7 +33,7 @@
 
 El diagrama del sistema fue elaborado en la herramienta CASE **draw.io** y se encuentra disponible en la carpeta `/docs/diagrama.png`.
 
-![Diagrama de Casos de Uso](docs/diagrama.png)
+!![Diagrama de Casos de Uso](docs/diagrama.jpg)
 
 ---
 
